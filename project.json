@@ -1,0 +1,8 @@
+{
+  "name": "dns-binder",
+  "description": "Lambda function that binds and unbinds instances from Route 53 DNS records",
+  "memory": 128,
+  "role": "arn:aws:iam::914373874199:role/lambda_function",
+  "runtime": "python",
+  "timeout": 30
+}

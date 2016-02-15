@@ -1,0 +1,22 @@
+{
+  "StatusCode": "InProgress",
+  "Service": "AWS Auto Scaling",
+  "AutoScalingGroupName": "dwc-blue-example",
+  "Description": "Launching a new EC2 instance: i-40c794c0",
+  "ActivityId": "8bdf0d41-76ef-4289-ae20-df274e329e75",
+  "Event": "autoscaling:EC2_INSTANCE_LAUNCH",
+  "Details": {
+    "Availability Zone": "us-east-1c",
+    "Subnet ID": "subnet-dc8e67f6"
+  },
+  "AutoScalingGroupARN": "arn:aws:autoscaling:us-east-1:REDACTED:autoScalingGroup:aef7aa04-a663-4138-92f8-d1bab754f3af:autoScalingGroupName/dwc-blue-example",
+  "Progress": 50,
+  "Time": "2016-02-15T16:11:44.524Z",
+  "AccountId": "REDACTED",
+  "RequestId": "8bdf0d41-76ef-4289-ae20-df274e329e75",
+  "StatusMessage": "",
+  "EndTime": "2016-02-15T16:11:44.524Z",
+  "EC2InstanceId": "i-40c794c0",
+  "StartTime": "2016-02-15T16:10:39.877Z",
+  "Cause": "At 2016-02-15T16:10:26Z an instance was started in response to a difference between desired and actual capacity, increasing the capacity from 0 to 1."
+}
