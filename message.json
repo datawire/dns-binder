@@ -1,0 +1,11 @@
+{
+"AutoScalingGroupName": "dnsbinder-test",
+"Service": "AWS Auto Scaling",
+"Time": "2016-02-16T19:32:32.634Z",
+"AccountId": "914373874199",
+"LifecycleTransition": "autoscaling:EC2_INSTANCE_TERMINATING",
+"RequestId": "6d3b0c4f-dbf3-488c-b126-ad5cf19a0e23",
+"LifecycleActionToken": "61ecad0c-6b9e-4f26-9e03-1ef9b8befb04",
+"EC2InstanceId": "i-8c6a1714",
+"LifecycleHookName": "dnsbinder-test-terminating"
+}

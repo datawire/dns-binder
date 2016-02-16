@@ -5,3 +5,4 @@ venv
 
 .directory
 .terraform
+*.tfstate*

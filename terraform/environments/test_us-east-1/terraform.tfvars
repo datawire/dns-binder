@@ -1,0 +1,6 @@
+environment = "test"
+image_id = "ami-7b8afa11"
+instance_type = "t2.micro"
+label = "internal"
+dns_config_format = "z=Z3TAUL65GP6J09;f=test-{sr}-{id}"
+sns_topic_arn = "arn:aws:sns:us-east-1:914373874199:prod-internal-dns-binder"
