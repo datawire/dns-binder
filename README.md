@@ -14,7 +14,6 @@ Add a tag named DnsConfig to the auto scaling group. The tag should be configure
 |--------|-----------------|------------------------------------------------------------------------- |
 |   z    | Hosted Zone ID  | The Route 53 Hosted Zone ID for the domain that will be modified.        |
 |   f    | Format          | The "format" of the resulting ID. See the formatting table for variables | 
-|   t    | Type            | Valid types are 'a' (A record) or 'c' (C Name) (default: C)              |
 
 ### Formatting Rules
 
@@ -22,8 +21,32 @@ Formatting rules are specified by surrounding the rule in { } braces.
 
 | Rule | Description                      |
 |------|----------------------------------|
-|  re  | region                           |
 |  id  | instance-id (the i- is stripped) |
+|  re  | region ID                        |
+|  sr  | short-region ID                  |
+
+The format of a short region ID is:
+
+`<first two chars of region ID><short region qualifier (see below)><number>`
+
+The short region qualifier is mapped as such:
+
+| Full Qualifier | Short Qualifier |
+|----------------|-----------------|
+| north          | n               |
+| northeast      | ne              |
+| northwest      | nw              |
+| east           | e               |
+| west           | w               |
+| south          | s               |
+| southeast      | se              |
+| southwest      | sw              |
+| central        | c               |
+
+Examples:
+
+1. `us-east-1` -> `use1`
+2. `ap-northeast-2` -> `apne2`
 
 ### Examples
 
