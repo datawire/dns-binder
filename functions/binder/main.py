@@ -16,6 +16,7 @@ import boto3
 import csv
 import logging
 import json
+import pprint
 import re
 
 logger = logging.getLogger()
@@ -27,7 +28,7 @@ route53 = boto3.client('route53')
 
 
 def handle(event, context):
-    logger.info("%s", event)
+    logger.debug("%s", pprint.pformat(event))
 
     msg = json.loads(event['Records'][0]['Sns']['Message'])
 
