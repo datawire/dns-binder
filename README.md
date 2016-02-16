@@ -56,7 +56,7 @@ Given an EC2 instance with a Public Dns name and DnsConfig entry similar to belo
 |-----------------|------------------------------------------|
 | Instance ID     | i-407ae6d8                               |
 | Public DNS Name | ec2-52-88-89-200.compute-1.amazonaws.com |
-| tag:DnsConfig   | z=Z34ILYZ77N8APC;f=foobar-{re}-{id};t=c  |
+| tag:DnsConfig   | z=Z34ILYZ77N8APC;f=foobar-{sr}-{id};t=c  |
 
 DnsConfig would generate a CName record like that did this `foobar-usw2-407ae6d8.example.com -> ec2-52-88-89-200.compute-1.amazonaws.com`
 
